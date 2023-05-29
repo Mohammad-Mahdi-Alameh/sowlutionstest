@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/productCard"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:orientation="vertical"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/borderColor"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:clickable="true"
+        >
+        <LinearLayout
+            android:id="@+id/trigger"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:clickable="true">
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:background="@color/yellow"
+            >
+            <ImageView
+                android:id="@+id/player"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/play">
+
+            </ImageView>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/projectName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:textSize="23dp"
+            android:layout_marginLeft="20dp"
+            />
+ <TextView
+            android:id="@+id/taskName"
+     android:layout_width="80dp"
+     android:layout_height="wrap_content"
+     android:textColor="@color/textColor"
+     android:layout_marginTop="5dp"
+     android:textSize="17dp"
+     android:layout_marginLeft="13dp"
+     />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notesTime"
+            android:layout_width="70dp"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/withNotes"
+                android:layout_marginLeft="-3dp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_align_horizontal_left_24"
+                ></ImageView>
+        <TextView
+            android:id="@+id/time"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+        </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/borderColor"/>
+
+
+
+</LinearLayout>
